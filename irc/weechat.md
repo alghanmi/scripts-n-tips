@@ -18,10 +18,19 @@ echo "Pin-Priority: 910" | sudo tee -a /etc/apt/preferences.d/weechat
 sudo aptitude update
 ```
 
+```
 ####Install WeeChat
 ```bash
 sudo aptitude install weechat
+
+##Install WeeChat on Ubuntu
+For ubuntu, we will use the [WeeChat PPA](https://launchpad.net/~nesthib/+archive/ubuntu/weechat-stable):
 ```
+sudo add-apt-repository ppa:nesthib/weechat-stable
+```
+
+
+
 
 ###Configuration
 Extra Scripts
@@ -73,7 +82,7 @@ Use Unicode characters in the interface
 /set weechat.look.read_marker_string "─"
 /set weechat.look.item_buffer_filter "•"
 
-/set weechat.look.buffer_time_format "${color:252}%H:${color:245}%M:${color:240}%S" 
+/set weechat.look.buffer_time_format "${color:252}%H:${color:245}%M:${color:240}%S"
 ```
 
 Adjusting the interface to work with [Solarized](http://ethanschoonover.com/solarized) Dark theme:
@@ -85,6 +94,12 @@ Adjusting the interface to work with [Solarized](http://ethanschoonover.com/sola
 /set buffers.color.hotlist_highlight_bg default
 /set buffers.color.hotlist_highlight_fg 5
 /set weechat.color.chat_highlight _5
+```
+
+Let channels appear under their respective servers
+```
+/set buffers.look.indenting on
+/set irc.look.new_channel_position near_server
 ```
 
 ###Using IRC
