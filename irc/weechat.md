@@ -18,19 +18,16 @@ echo "Pin-Priority: 910" | sudo tee -a /etc/apt/preferences.d/weechat
 sudo aptitude update
 ```
 
-```
 ####Install WeeChat
 ```bash
 sudo aptitude install weechat
+```
 
 ##Install WeeChat on Ubuntu
 For ubuntu, we will use the [WeeChat PPA](https://launchpad.net/~nesthib/+archive/ubuntu/weechat-stable):
 ```
 sudo add-apt-repository ppa:nesthib/weechat-stable
 ```
-
-
-
 
 ###Configuration
 Extra Scripts
