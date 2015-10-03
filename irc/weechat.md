@@ -160,6 +160,13 @@ key unbind meta-y
 ###Keyboard Bindings
 1. `<Ctrl>`-`X` &ndash; Switch between core buffer and server buffer
 
+###ZNC Specific
+Enabling server-time & other IRCv3 capabilities
+```
+/set irc.server_default.capabilities away-notify,multi-prefix,server-time,znc.in/server-time-iso
+/reconnect -all
+```
+
 ##Resources
 http://weechat.org/
 http://wiki.znc.in/Weechat
