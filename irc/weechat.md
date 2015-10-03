@@ -144,8 +144,11 @@ Close buffer
 /close
 ```
 
+
+Bind/unbind key to command, e.g. bind <Alt>-`y` to `/buffer close` (use <Alt>-`k` to find key codes)
 ```
-Bind key to command, e.g. bind <Alt>-`y` to `/buffer close`
+/key bind (press <Alt>-k) (press <Alt>-y) /buffer close
+key unbind meta-y
 ```
 
 
