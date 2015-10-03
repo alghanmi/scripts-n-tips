@@ -144,6 +144,7 @@ Close buffer
 /close
 ```
 
+```
 Bind key to command, e.g. bind <Alt>-`y` to `/buffer close`
 ```
 
