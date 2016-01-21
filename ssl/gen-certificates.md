@@ -34,6 +34,11 @@ To obtain a signed certificate from a CA, i.e. one that the browser will trust w
 #Generating Certificate Service Request (if you want to use a Certificate Authority)
 openssl req -new -key $HOST_FQDM.key -out $HOST_FQDM.csr
 ```
+If you want to enforce SHA256 signature, use the following command
+```bash
+#Generating Certificate Service Request (if you want to use a Certificate Authority)
+openssl req -new -sha256 -key $HOST_FQDM.key -out $HOST_FQDM.csr
+```
 You will give the CA the CSR (and only te CSR, you keep the private key) and it will provide you with the certificate (i.e. public key)
 
 ###B. Self-Signed Certificate
