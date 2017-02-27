@@ -35,6 +35,16 @@ Extra Scripts
 /script install buffers.pl buffer_autoclose.py iset.pl go.py colorize_nicks.py
 ```
 
+Enable Secret Store and store secrets. Make sure to use a passphrase otherwise, WeeChat will use clear text. Also make the secret store more secure.
+```
+/set sec.crypt.hash_algo sha512
+/set sec.crypt.cipher aes256
+/set sec.crypt.salt on
+
+/secure passphrase WEECHAT_PASSPHRASE
+/secure set irc_password YOUR_IRC_OR_BOUNCER_PASSWORD
+```
+
 Disable merging _core_ buffer with _server_ buffers
 ```
 /set irc.look.server_buffer independent
